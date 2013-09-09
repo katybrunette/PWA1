@@ -24,10 +24,22 @@
 
     var round=1;
 
-    function fight(){};
+    function fight(){
+        console.log('in the fight function');
+
+        for (var i=0; i<10; i++){
+            //code will go here
+        };
+    };
 
     function winnerCheck(){};
+        //code will go here
+    
 
+    /******* The program gets started below *******/
+    console.log('program starts');
     fight();
+
+
 
 })();
