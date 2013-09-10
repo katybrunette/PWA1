@@ -11,16 +11,10 @@
     console.log("FIGHT!!!");
 
     //player one array
-    var myArray = newArray([0],[1],[2]);
-    myArray[0] = "Spiderman";
-    myArray[1] = 20;
-    myArray[2] = 100;
+    var myArray = ["Spiderman", 20, 100];
 
     //player two array
-    var myArray2 = newArray([0],[1],[2]);
-    myArray2[0] = "Batman";
-    myArray2[1] = 20;
-    myArray2[2] = 100; 
+    var myArray2 = ["Batman", 20, 100];
 
 
     var round=0;
