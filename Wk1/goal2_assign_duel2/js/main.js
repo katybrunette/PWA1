@@ -2,7 +2,7 @@
 // Date: 09/09/2013
 // Class: PWA 1 
 // Assignment: Goal 2 - Duel 2
-
+// Instructor: Eric Silvay
 
 
 //self-executing function
@@ -15,7 +15,6 @@
 
     //player two array
     var myArray2 = ["Batman", 20, 100];
-
 
     var round=0;
 
@@ -72,7 +71,6 @@
         return result;
 
     };
-
 
     /******* The program gets started below *******/
     console.log('program starts');
