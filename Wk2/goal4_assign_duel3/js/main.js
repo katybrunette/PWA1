@@ -21,10 +21,9 @@
 
         //alert(myArray[0]+":"+myArray[2]+" *START* "+myArray2[0]+":"+myArray2[2]);
 
-        for (var i=0; i < 10; i++){
-            
-            var minDamage1 = myArray[1] * .5;
-            var minDamage2 = myArray2[1] * .5;
+        
+            var minDamage1 = fighters[1].damage * .5;
+            var minDamage2 = fighters[1].damage * .5;
 
             var f1 = Math.floor(Math.random()*(myArray[1]-minDamage1)+minDamage1);
             var f2 = Math.floor(Math.random()*(myArray2[1]-minDamage2)+minDamage2);
