@@ -21,17 +21,19 @@
 
         //alert(myArray[0]+":"+myArray[2]+" *START* "+myArray2[0]+":"+myArray2[2]);
 
+
+
         
-            var minDamage1 = fighters[1].damage * .5;
+            var minDamage1 = fighters[0].damage * .5;
             var minDamage2 = fighters[1].damage * .5;
 
-            var f1 = Math.floor(Math.random()*(myArray[1]-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(myArray2[1]-minDamage2)+minDamage2);
-
+            var f1 = Math.floor(Math.random()*(fighters[0].health-minDamage1)+minDamage1);
+            var f2 = Math.floor(Math.random()*(fighters[1].health-minDamage2)+minDamage2);
+            console.log(minDamage1, minDamage2);
         
             //inflict damage
-            myArray[2]-=f1;
-            myArray2[2]-=f2;
+            fighters[0]-=f1;
+            fighters[1]-=f2;
 
 
             console.log(myArray[0]+":"+myArray[2]+" "+myArray2[0]+":"+myArray2[2]);
@@ -44,12 +46,12 @@
                 //alert(myArray[0]+":"+myArray[2]+" *ROUND "+round+" OVER* "+myArray2[0]+":"+myArray2[2]);
             }else{
                 //alert(results);
-                break;
+                //break;
             };
 
         };
     
-    };
+    });
 
     function winnerCheck(){
         console.log("in winnerCheck FN");
@@ -74,4 +76,4 @@
     fight();
 
 
-})();
+});
